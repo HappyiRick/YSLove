@@ -14,8 +14,9 @@ This project include these frameworks with Cocoapods.
 
 Some details about this project are as follows.
 
-<img src="https://i.imgur.com/CoI8tQo.jpg" width = "300" height = "500" alt="图片名称" align=center />
+<img src="https://i.imgur.com/CoI8tQo.jpg" width = "320" height = "568" alt="图片名称" align=center />
 
-<img src="https://i.imgur.com/B7w1iQC.jpg" width = "300" height = "500" alt="图片名称" align=center />
+<br>
+<img src="https://i.imgur.com/B7w1iQC.jpg" width = "320" height = "568" alt="图片名称" align=center />
 
 I hope it will works for you. 
