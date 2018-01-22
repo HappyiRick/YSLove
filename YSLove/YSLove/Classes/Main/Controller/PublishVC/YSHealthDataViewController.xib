@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YSHealthDataViewController">
+            <connections>
+                <outlet property="tipsLabel" destination="h2Q-UV-3AE" id="fUV-kI-vs4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hahhahah " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2Q-UV-3AE">
+                    <rect key="frame" x="20" y="287" width="335" height="210"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="210" id="i8F-lW-Gje"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky3-LZ-Hyb">
+                    <rect key="frame" x="40" y="517" width="295" height="60"/>
+                    <color key="backgroundColor" red="0.83006821070000003" green="0.2034408452" blue="0.15028725109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="MnJ-K2-Ngk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="实时更新"/>
+                    <state key="highlighted" title="实时更新">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="updateStep" destination="-1" eventType="touchUpInside" id="g8D-ff-F4C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="h2Q-UV-3AE" secondAttribute="trailing" constant="20" id="60P-bF-MsO"/>
+                <constraint firstItem="ky3-LZ-Hyb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="J2u-3n-2eT"/>
+                <constraint firstAttribute="bottom" secondItem="ky3-LZ-Hyb" secondAttribute="bottom" constant="90" id="NLg-N6-3CA"/>
+                <constraint firstAttribute="trailing" secondItem="ky3-LZ-Hyb" secondAttribute="trailing" constant="40" id="QdP-DM-cfJ"/>
+                <constraint firstItem="h2Q-UV-3AE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="evM-Tf-beQ"/>
+                <constraint firstItem="ky3-LZ-Hyb" firstAttribute="top" secondItem="h2Q-UV-3AE" secondAttribute="bottom" constant="20" id="uJs-Ry-ZNb"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="67.5"/>
+        </view>
+    </objects>
+</document>

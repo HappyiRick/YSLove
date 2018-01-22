@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p  #{title} yslover的nodejs服务api接口说明
+  li  通过name查询:
+  a(href="http://localhost:3000/users/userAll") http://localhost:3000/users/userAll
+  li 添加用户：
+  a(href="http://localhost:3000/users/userRegister?username=呵呵呵567&userpassword='4444444'&uregistertime='2017-1-13 14:41'") http://localhost:3000/users/userRegister?name=呵呵呵567&password=4444444
