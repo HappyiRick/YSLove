@@ -28,13 +28,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self loadAnimations];
-    [self setTransitioningDelegate:[RZTransitionsManager shared]];
+    
     // 1.初始化tabbar
     [self setupTabbar];
     
     // 2.初始化所有子控制器
     [self setupChildViewControlelrs];
+    [self loadAnimations];
+    [self setTransitioningDelegate:[RZTransitionsManager shared]];
+    
     
     
 }
@@ -73,13 +75,6 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
-    for (UIView *view in self.tabBar.subviews) {
-        if ([view isKindOfClass:[UIControl class]]) {
-            [view  removeFromSuperview];
-        }
-    }
-    
     [[RZTransitionsManager shared] setInteractionController:self.presentInteractionController
                                          fromViewController:[self class]
                                            toViewController:nil
@@ -88,6 +83,15 @@
                                          fromViewController:[self class]
                                            toViewController:nil
                                                   forAction:RZTransitionAction_Present];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    for (UIView *view in self.tabBar.subviews) {
+        if ([view isKindOfClass:[UIControl class]]) {
+            [view  removeFromSuperview];
+        }
+    }
 }
 
 -(void)tabBarDidClickedPlusButton:(YSTabBar *)tabBar{

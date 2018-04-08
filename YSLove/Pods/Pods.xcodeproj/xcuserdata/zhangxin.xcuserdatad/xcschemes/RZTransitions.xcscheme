@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '34BE50CAAC0E55B72AC5F5729AB35C62'
-               BlueprintName = 'RZTransitions'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libRZTransitions.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "34BE50CAAC0E55B72AC5F5729AB35C62"
+               BlueprintName = "RZTransitions"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libRZTransitions.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
